@@ -1,0 +1,192 @@
+.aeon_container {
+  max-width: 1200px;
+  width: 99%;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.aeon-nature-fruits-veggies {
+  position: relative;
+  overflow: hidden;
+  margin: 100px 0;
+}
+
+.aeon-nature-fruits-veggies .bg-images {
+  position: relative;
+}
+
+.aeon-nature-fruits-veggies .bg-images .overlay {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.67);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 1s all;
+  opacity: 1;
+  align-items: center;
+  display: flex;
+}
+.imgFluid {
+  width: 100%;
+  height: 500px;
+}
+.aeon-nature-fruits-veggies .bg-images img {
+  box-sizing: border-box;
+  transition: transform 0.8s;
+  transition: 1s all;
+  width: 100%;
+  height: 100%;
+}
+.overlay .aeon_information {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+.aeon_information div {
+  flex: 1;
+}
+.aeon-nature-fruits-veggies .aeon_title {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.aeon-nature-fruits-veggies .aeon_title h2 {
+  color: white;
+  font-weight: 400;
+  line-height: 60px;
+  transition: 0.8s;
+  opacity: 1;
+}
+
+.aeon-nature-fruits-veggies .aeon_title h2 strong {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.aeon-nature-fruits-veggies .cards {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.aeon-nature-fruits-veggies .cards .item {
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 25px 10px;
+  transition: all 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.8s;
+  opacity: 1;
+}
+
+.aeon-nature-fruits-veggies .cards .item h5 {
+  color: #1f2939;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.aeon-nature-fruits-veggies .cards .item p {
+  color: #4f5e74;
+  font-size: 16px;
+}
+
+/* hover effect start */
+.aeon-nature-fruits-veggies:hover .bg-images img {
+  transform: scale(1.1) rotate(3deg);
+}
+
+.aeon-nature-fruits-veggies:hover .bg-images .overlay {
+  opacity: 1;
+}
+
+.aeon-nature-fruits-veggies:hover .aeon_title h2 {
+  opacity: 1;
+}
+
+.aeon-nature-fruits-veggies:hover .cards .item {
+  opacity: 1;
+}
+
+.aeon-nature-fruits-veggies .cards .item:hover {
+  background-color: #f7902d;
+}
+
+.aeon-nature-fruits-veggies .cards .item:hover h5,
+.aeon-nature-fruits-veggies .cards .item:hover p {
+  color: #fff;
+}
+
+/* ==============Responsive classes============== */
+/* Responsive: start 320px end: 1368px  */
+
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  .overlay .aeon_information {
+    flex-direction: column;
+  }
+  .imgFluid {
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+  }
+  .aeon-nature-fruits-veggies .bg-images img {
+    width: auto;
+    height: fit-content;
+  }
+  .aeon-nature-fruits-veggies .aeon_title h2 {
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .aeon-nature-fruits-veggies .cards {
+    grid-gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+  .aeon-nature-fruits-veggies .aeon_title {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .overlay .aeon_information {
+    flex-direction: column;
+  }
+  .imgFluid {
+    width: 100%;
+    padding-bottom: 90px;
+  }
+  .aeon-nature-fruits-veggies .bg-images img {
+    width: auto;
+    height: fit-content;
+  }
+  .aeon-nature-fruits-veggies .aeon_title h2 {
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .aeon-nature-fruits-veggies .aeon_title {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .aeon-nature-fruits-veggies .aeon_title {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .aeon-nature-fruits-veggies .aeon_title {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+}
